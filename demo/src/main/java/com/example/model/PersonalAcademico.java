@@ -1,9 +1,22 @@
 package com.example.model;
 
-public class PersonalAcademico extends Usuario{
+import java.util.List;
 
-    public PersonalAcademico(String usuario, String contraseña, String nombre, String apellido) {
-        super(usuario, contraseña, nombre, apellido);
+public class PersonalAcademico extends Usuario{
+    private List<Indicente> indicidente;
+
+    public PersonalAcademico(String usuario, String contraseña, String nombre, String apellido,
+            List<Indicente> indicidente, List<Indicente> indicidente2) {
+        super(usuario, contraseña, nombre, apellido, indicidente);
+        indicidente = indicidente2;
+    }
+
+    public List<Indicente> getIndicidente() {
+        return indicidente;
+    }
+
+    public void setIndicidente(List<Indicente> indicidente) {
+        this.indicidente = indicidente;
     }
 
     public void reportarError(String email, String contenido){
