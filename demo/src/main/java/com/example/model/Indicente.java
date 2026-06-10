@@ -4,14 +4,14 @@ import java.util.Date;
 import java.util.List;
 
 public class Indicente {
-    private int id;
-    private Date fecha_reportado;
-    private String estado;
-    private String titulo;
-    private String descripcion;
-    private List log_actualizaciones;
-    private Date fecha_cerrado;
-    private String tipo;
+    protected int id;
+    protected Date fecha_reportado;
+    protected String estado;
+    protected String titulo;
+    protected String descripcion;
+    protected List log_actualizaciones;
+    protected Date fecha_cerrado;
+    protected String tipo;
     private Usuario usuario;
     private PersonalAcademico personalAcademico;
 

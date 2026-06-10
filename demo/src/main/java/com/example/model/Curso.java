@@ -10,9 +10,11 @@ public class Curso {
     private List<Estudiante> estudiantesEnEsperaDeInscripcion;
     private Profesor profesor;
     private List<Foro> foro;
-    
+    private List<ActividadSumativa> actividadesSumativas;
+
     public Curso(String id, String nombre, boolean estadoDisponible, List<Estudiante> estudiantesInscritos,
-            List<Estudiante> estudiantesEnEsperaDeInscripcion, Profesor profesor, List<Foro> foro) {
+            List<Estudiante> estudiantesEnEsperaDeInscripcion, Profesor profesor, List<Foro> foro,
+            List<ActividadSumativa> actividadesSumativas) {
         this.id = id;
         this.nombre = nombre;
         this.estadoDisponible = estadoDisponible;
@@ -20,8 +22,15 @@ public class Curso {
         this.estudiantesEnEsperaDeInscripcion = estudiantesEnEsperaDeInscripcion;
         this.profesor = profesor;
         this.foro = foro;
+        this.actividadesSumativas = actividadesSumativas;
     }
     
+    public List<ActividadSumativa> getActividadesSumativas() {
+        return actividadesSumativas;
+    }
+    public void setActividadesSumativas(List<ActividadSumativa> actividadesSumativas) {
+        this.actividadesSumativas = actividadesSumativas;
+    }
     public String getId() {
         return id;
     }

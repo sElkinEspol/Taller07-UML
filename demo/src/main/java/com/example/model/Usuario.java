@@ -3,11 +3,11 @@ package com.example.model;
 import java.util.List;
 
 public class Usuario {
-    private String usuario;
-    private String contraseña;
-    private String nombre;
-    private String apellido;
-    private List<Indicente> indicidente;
+    protected String usuario;
+    protected String contraseña;
+    protected String nombre;
+    protected String apellido;
+    protected List<Indicente> indicidente;
     
     public Usuario(String usuario, String contraseña, String nombre, String apellido, List<Indicente> indicidente) {
         this.usuario = usuario;
@@ -16,7 +16,7 @@ public class Usuario {
         this.apellido = apellido;
         this.indicidente = indicidente;
     }
-    
+
     public List<Indicente> getIndicidente() {
         return indicidente;
     }
